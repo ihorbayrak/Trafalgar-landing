@@ -1,0 +1,33 @@
+.btn {
+    padding: 5px 40px;
+
+    display: block;
+
+    background: #fff;
+    border: 1px solid $main-color;
+    border-radius: 55px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: $main-color;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.3s all;
+
+    &:hover {
+        color: #ffffff;
+        background: $main-color;
+    }
+    &_blue {
+        color: #ffffff;
+        background: $main-color;
+        
+        &:hover {
+            color: $main-color;
+            background: #fff;
+        }
+    }
+}

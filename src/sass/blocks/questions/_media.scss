@@ -1,0 +1,21 @@
+@media screen and (max-width: 576px) {
+    .questions {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .questions {
+        padding-top: 100px;
+
+        &__wrapper {
+            padding: 50px 0 0 0;
+        }
+
+        &__item {
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+}

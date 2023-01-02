@@ -1,0 +1,19 @@
+@media screen and (max-width: 576px) {
+    .title {
+        &_fz20 {
+            font-size: 16px;
+        }
+        &_fz24 {
+            font-size: 20px;
+        }
+        &_fz48 {
+            font-size: 40px;
+        }
+        &_fz36 {
+            font-size: 30px;
+        }
+        &_white {
+            font-size: 30px;
+        }
+    }
+}

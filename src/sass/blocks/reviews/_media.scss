@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+    .reviews {
+        padding-top: 100px;
+
+        &__back {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .reviews {
+        &__content {
+            padding: 25px;
+            min-height: 425px;
+
+            background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+            border-radius: 24px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__img {
+            margin-right: 10px;
+        }
+        &__name {
+            &-title {
+                font-size: 14px;
+            }
+            &-subtitle {
+                font-size: 13px;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}

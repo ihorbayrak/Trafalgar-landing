@@ -1,0 +1,82 @@
+.services {
+    padding-top: 192px;
+
+    &__content {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    &__descr {
+        margin: 0 auto;
+        margin-top: 33px;
+
+        max-width: 952px;
+
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #7d7987;
+        text-align: center;
+    }
+
+    &__card {
+        padding: 10px 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: #ffffff;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        border-radius: 20px;
+
+        &-text {
+            margin-top: 15px;
+            
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            color: #7d7987;
+            text-align: center;
+        }
+    }
+    &__title {
+        margin-top: 22px;
+    }
+
+    .swiper {
+        &__nav-button {
+            color: $main-color;
+            opacity: 0.5;
+            transition: 0.3s all ease;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &::before,
+            &::after {
+                font-size: 35px;
+            }
+        }
+
+        &-button-next {
+            right: 0;
+        }
+
+        &-button-prev {
+            left: 0;
+        }
+
+        &-pagination-bullet {
+            background-color: $main-color;
+            opacity: 0.5;
+        }
+
+        &-pagination-bullet-active {
+            opacity: 1;
+        }
+    }
+}
+
+@import "./media";

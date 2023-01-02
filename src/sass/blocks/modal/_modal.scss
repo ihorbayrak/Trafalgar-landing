@@ -1,0 +1,111 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    pointer-events: none;
+    opacity: 0;
+
+    z-index: 100;
+
+    transition: 0.5s all;
+
+    &_active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__content {
+        padding: 30px 50px;
+
+        position: relative;
+
+        min-height: 50vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+        background: #fff;
+
+        transition: 0.5s all;
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        font-size: 30px;
+        font-weight: 700;
+        color: #9c9b9b;
+
+        cursor: pointer;
+    }
+
+    &__form {
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        max-width: 500px;
+        min-height: 200px;
+    }
+    &__input {
+        padding: 10px 10px 10px 5px;
+        margin: 25px 0;
+
+        display: block;
+        width: 100%;
+        background: none;
+        background-color: white;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid lightgray;
+
+        color: #000;
+        font-size: 16px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        button {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+
+    &__subtitle {
+        margin-top: 5px;
+
+        font-weight: 400;
+        font-size: 16px;
+
+        color: #939397;
+    }
+}

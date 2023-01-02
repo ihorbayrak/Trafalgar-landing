@@ -1,0 +1,24 @@
+@media screen and (max-width: 1200px) {
+    .promo {
+        &__wrapper {
+            grid-template-columns: minmax(auto, 445px) minmax(auto, 400px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo {
+        padding-top: 60px;
+    }
+}

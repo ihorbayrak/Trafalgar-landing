@@ -1,0 +1,32 @@
+.title {
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0;
+    &_fz20 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 60px;
+        color: #ffffff;
+    }
+    &_fz24 {
+        font-size: 24px;
+        line-height: 56px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    &_fz36 {
+        font-size: 36px;
+        line-height: 56px;
+        text-align: center;
+    }
+    &_white {
+        font-size: 36px;
+        line-height: 48px;
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+@import "./media";

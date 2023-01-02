@@ -1,0 +1,41 @@
+.mobile {
+    padding-top: 229px;
+
+    &__wrapper {
+        padding-left: 90px;
+        
+        display: grid;
+        grid-template-columns: 420px 665px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        .divider {
+            margin: 0;
+            margin-top: 30px;
+        }
+    }
+    &__title {
+        line-height: 48px;
+        text-align: left;
+    }
+    &__descr {
+        max-width: 450px;
+
+        margin-top: 31px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #7d7987;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+}
+
+@import "./media";
